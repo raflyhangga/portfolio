@@ -1,0 +1,249 @@
+:root {
+    --primary : #FF9F1C;
+    --dark : #2f4858;
+    --secondary : #FFBF69;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* height: 20000px; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* Navigation Bar Start */
+
+nav {
+    background-color: rgba(255, 255, 255, .95);
+    padding: 1rem;
+    text-align: center;
+    border-bottom-style: solid;
+    border-color: var(--primary);
+    box-shadow: 0 -6px 1rem ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav h1 {
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+nav h1 span {
+    color: #FFBF69;
+}
+
+/* Navigation Bard Ends */
+
+/* Hero Starts */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    margin-top: 7rem;
+    background-color: var(--primary);
+    padding: 4rem;
+    border-radius: 40px;
+}
+
+.hero img {
+    /* width: 15%; */
+    width: 210px;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.hero .hero-content .text {
+    line-height: 4rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.hero .hero-content .text p {
+    font-weight: 300;
+}
+
+.hero .hero-content .text h2 {
+    font-weight: 600;
+}
+/* Hero Ends */
+
+
+/* About Starts */
+
+.about {
+    text-align: center;
+    margin: 6rem 7rem;
+}
+
+.about h2, .background h2 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+.about h2 span, .background h2 span {
+    color: var(--secondary) ;
+}
+
+
+.about .about-content {
+    display: flex;
+}
+
+.about .about-content img {
+    width: 35%;
+    margin-right: 2rem;
+    border-radius: 20px;
+}
+
+.about .about-content .text {
+    text-align: start;
+}
+
+.about .about-content .text span {
+    font-weight: 700;
+}
+/* About Ends */
+
+/* Background Starts */
+
+.background {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.background img {
+    width: 100%;
+}
+
+.background .academic {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.background .academic .text {
+    margin: 0 2rem;
+    text-align: start;
+    font-size: 1.6rem;
+}
+
+.background .academic img {
+    width: 15%;
+}
+
+.background .academic .text .date {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.background .academic .text .institution {
+    font-weight: 600;
+}
+
+.background .academic .text .institution span {
+    font-weight: 100;
+}
+
+.background .academic .text .desc {
+    font-weight: 200;
+}
+
+/* Backgroun Ends */
+
+/* Footer Starts */
+
+footer {
+    background-color: var(--primary);
+    padding: .8rem 3rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a span {
+    font-weight: 600;
+}
+
+
+
+/* Media Query*/
+
+/* Tablet */
+
+@media (max-width: 1167px) {
+    .hero .hero-content {
+        margin-top: 2rem;
+    }
+
+    .background .academic img{
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    /* .background .academic .text {
+        font-size: 80%;
+    } */
+}
+
+@media (max-width: 845px) {
+    
+    html {
+        font-size: 66.5%;
+    }
+
+    .about .about-content .text {
+        font-size: 165% ;
+    }
+
+    .about .about-content {
+        flex-wrap: wrap;
+    }
+
+    .about .about-content img {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+        
+    
+    
+}
+
+@media (max-width: 452px) {
+    html {
+        font-size: 45.2%;
+    }
+
+    .hero img {
+        width: 120px;
+    }
+}
+
+/* Phone */
